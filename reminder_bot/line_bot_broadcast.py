@@ -13,7 +13,7 @@ def send_reminder():
     except Exception as e:
         print(f"메시지 전송 실패: {str(e)}")
 
-# 매일 저녁 8:45에 실행되도록 설정
+# 매일 저녁 8:50에 실행되도록 설정
 schedule.every().day.at("20:50").do(send_reminder)
 
 # 프로그램을 계속 실행하면서 스케줄 체크
